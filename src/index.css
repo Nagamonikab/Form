@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* styles.css */
+.table-container {
+  width: 600px; /* Set your desired static width */
+  margin: 0 auto; /* Center the table horizontally */
+}
+
+.table {
+  width: 100%; /* Ensure the table takes up the full width of the container */
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd; /* Add borders to cells */
+  padding: 8px; /* Add padding for better spacing */
+}
+
+.table th {
+  background-color: #f2f2f2; /* Add background color for header */
+}
+

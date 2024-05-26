@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Table from './component/table';
-import Forms from './component/forms';
+import Form from './component/form';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -24,13 +24,14 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h1 className="mt-5">CRUD Table</h1>
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-8">
           <Table data={data} onEdit={handleEdit} onDelete={handleDelete} />
         </div>
-        <div className="col-md-5">
+       <div className="col-md-1"></div>
+        <div className="col-md-3">
           <Form currentItem={currentItem} onSave={handleSave} />
         </div>
       </div>
