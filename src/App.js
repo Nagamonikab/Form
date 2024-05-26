@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Table from './component/table';
-import Form from './component/form';
+import Forms from './component/forms';
 
 const App = () => {
   const [data, setData] = useState([]);
