@@ -77,7 +77,7 @@ const Form = ({ currentItem, onSave }) => {
     
     if (!item.gender) newErrors.gender = 'Gender is required !';
     if (!item.education) newErrors.education = 'Education is required !';
-    if (!item.hobbies.length !==0) newErrors.hobbies = 'At least one hobby is required !';
+    if (item.hobbies.length ===0) newErrors.hobbies = 'At least one hobby is required !';
     if (!item.date) newErrors.date = 'Date is required !';
     
 
